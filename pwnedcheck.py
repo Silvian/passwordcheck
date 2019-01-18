@@ -12,7 +12,7 @@ def hashpasswd(password):
 
 def pwncheck(password):
     sha1_hash = hashpasswd(password)
-    # fist 5 characters is to be used as the key
+    # first 5 characters is to be used as the key
     key = sha1_hash[:5]
     # remaining characters to be used as the lookup hash
     hash = sha1_hash[5:]
